@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      display:grid;
+      background-color: black;
+      grid-template-columns: 1200px 100px 100px 100px;
+      
+    }
+    li{
+      list-style-type: none;
+      padding:10px 20px;
+      color: white;
+    }
+    .section{
+      display:grid;
+      background-color: aqua;
+      height: 93vh;
+      grid-template-columns: auto auto auto;
+      grid-template-rows: 300px 200px;
+      align-items: center;
+     
+      grid-column-gap: 500px;
+    
+      
+    }
+    .img{
+      grid-column: 1/ span 4;
+      width:100vw;
+     }
+     .box{
+      background-color: blue;
+      border: 2px solid black;
+      height: 100px;
+      width:100px;
+      position: relative;
+      left:104px;
+      top: 100px;
+     }
+   
+   
+  </style>
+</head>
+<body>
+  <header class="header">
+    <nav>
+      <ul class="container">
+        <li><img src="person.jpg" alt="person" style="width:30px;height:30px;"></li>
+        <li>About</li>
+        <li>Contact</li>
+        <li>Email </li>
+      </ul>
+    </nav>
+   </header>
+   <div class="section">
+      <div class="img"><img src="mountains.jpg" alt="" style="height: 300px;width:100vw;"></div>
+      <div class="box"><img src="person.jpg" alt="" style="height: 100px;width:100px;"></div>
+      <div class="box"><img src="person.jpg" alt="" style="height: 100px;width:100px;"></div>
+      <div class="box"><img src="person.jpg" alt="" style="height: 100px;width:100px;"></div>
+   </div>
+   
+</body>
+</html>
